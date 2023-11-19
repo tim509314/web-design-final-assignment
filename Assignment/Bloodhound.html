@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<title>Apex - Legends - Bangalore</title>
+    <script>
+      function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+</head>
+
+<body>
+	<nav class="navbar">
+		<a href="index.html"><img src="image/logo.png" alt="logo" class="logo"></a>
+		<ul class="nav-list">
+				<li class="list-item"><a href="index.html"><button class="nav-button">Home</button></a></li>
+				<li class="list-item"><a href="Updates.html"><button class="nav-button">Updates</button></a></li>
+				<li class="list-item">
+						<div class="dropdown">
+								<a href="Legends.html" class="dropdown-btn"><span>Legends</span></a>
+								<ul class="menu">
+											<li>
+												<a href="Bangalore.html">Bangalore</a>
+											</li>
+										<li>
+												<a href="Bloodhound.html">Bloodhound</a>
+											</li>
+											<li>
+													<div style="text-align: center">upcoming</div>
+												</li>
+										</ul>
+							</div>
+				</li>
+				<li class="list-item"><a href="Download.html"><button class="nav-button">Download</button></a></li>
+		</ul>
+	</nav>
+
+	<div class="content-container">
+        <img src="image/bg-apex-legends.jpg" class="background" >
+        <div class="content-left">
+            <img src="image/apex-legends/icon/Bloodhound.png" >
+        </div>
+        <div class="content-right">
+            <div>
+            <h1>BLOODHOUND</h1>
+            <h2>Technological Tracker</h2>
+            <p>Bloodhound is known across the Outlands as one of the greatest game hunters the Frontier has ever seen. The child of two engineers stationed at the New Dawn industrial plant on Talos, Bloodhound was taken in by their uncle Artur after a meltdown destroyed the facility and killed both their parents. Artur taught them the Old Ways, a belief system that focuses on the glory of nature and rejects modern technology. Yet Bloodhound was constantly drawn to technological marvels, and ultimately used both new and old methods to take down a Goliath that preyed on the people of their village, forever changing their life’s path.
+            <span id="dots">...</span></p>
+            <span id="more">
+            <p>After Bloodhound’s lover was unceremoniously killed in the Thunderdome, they vowed to win enough battles that they could both enter Valhalla… and the Apex Games were the perfect place for Bloodhound to accumulate victories. Their unparalleled tracking skills are a boon to any team they join, helping them root out hidden opponents and track enemy movements. Calling on Earth’s Old Norse Gods to guide them, Bloodhound believes that destiny is a path that has already been laid out, eventually carrying all to their death. But with that knowledge comes strength, because until that day comes, Bloodhound knows they can’t be stopped.</p></span>
+
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+            <div style="margin-top: 50px;">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Real Name</strong>
+                    </td>
+                    <td>
+                        Blódhundr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Age</strong>
+                    </td>
+                    <td>
+                        40
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <strong>Home Planet</strong>
+                    </td>
+                    <td>
+                        Talos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Class</strong>
+                    </td>
+                    <td>
+                        Recon
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <div class="abilities" style="margin-top: 50px;">
+            <table>
+                <tr>
+                    <td>
+                        <img src="image/apex-legends/abilities/Bloodhound-ability-p.png" style="filter: invert(1)">
+                    </td>
+                    <td>
+                        <p><strong style="color: red">Passive ability</strong><br>
+                        <strong>Tracker</strong><br>
+                        See tracks left behind by your foes.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="image/apex-legends/abilities/Bloodhound-ability-1.png" style="filter: invert(1)">
+                    </td>
+                    <td>
+                       <p><strong style="color: red">Tactical ability</strong><br>
+                        <strong>Eye of the Allfather</strong><br>
+                        Briefly reveal hidden enemies, traps, and clues throughout strctures in front of you.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <img src="image/apex-legends/abilities/Bloodhound-ability-2.png" style="filter: invert(1)">
+                    </td>
+                    <td>
+                        <p><strong style="color: red">Ultimate ability</strong><br>
+                        <strong>Beast of the Hunt</strong><br>
+                        Enhances your senses, allowing you to move faster and highlighting your prey.</p>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+	</div>
+
+
+    <footer>
+        <p>&copy; 2023 Lou Tim Hung</p>
+    </footer>
+</body>
+</html>
