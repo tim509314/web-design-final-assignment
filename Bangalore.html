@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Apex - Legends - Bangalore</title>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar"><a href="index.html"><img src="image/logo.png" alt="logo" class="logo"></a>
+      <ul class="nav-list">
+        <li class="list-item"><a href="index.html"><button class="nav-button">Home</button></a></li>
+        <li class="list-item"><a href="Updates.html"><button class="nav-button">Updates</button></a></li>
+        <li class="list-item">
+          <div class="dropdown"><a href="Legends.html" class="dropdown-btn"><span>Legends</span></a>
+            <ul class="menu">
+              <li><a href="Bangalore.html">Bangalore</a></li>
+              <li><a href="Bloodhound.html">Bloodhound</a></li>
+              <li>
+                <div style="text-align: center">upcoming</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-item"><a href="Download.html"><button class="nav-button">Download</button></a></li>
+      </ul>
+    </nav>
+    <div class="content-container"><img src="image/bg-apex-legends.jpg" class="background">
+      <div class="content-left"><img src="image/apex-legends/icon/Bangalore.png"></div>
+      <div class="content-right">
+        <div>
+          <h1>BANGALORE</h1>
+          <h2>Professional Soldier</h2>
+          <p>Born into a military family where she, her parents, and her four older brothers all served with the IMC, Bangalore has been an exceptional soldier her whole life. Dedicated to the IMC cause, she was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded.</p>
+          <p>When the Frontier Militia attacked the IMC on Gridiron, escape was nearly impossible. Using an experimental device to power their jump-drive, the IMS Hestia managed to narrowly escape the Battle at Gridiron only to crash on the planet Gaea. The surviving crew, including Anita and her brother Jackson, built a settlement on the islands of New Antilla. Shortly after, Anita and Jackson left to begin their quest back home– or so she thought. <span id="dots">...</span></p><span id="more">
+            <p>A few years later, on another ship nicknamed the IMS Hestia II, Anita and Jackson were attacked by unknown assailants. A bomb on the outer hull blew out a chunk of the ship… but not before Jackson shielded her, sacrificing his own life to save hers. Anita watched helplessly, as Jackson was sucked out into the vacuum of space. After crashing on the Syndicate planet Solace, Anita looked for both work and the brother she refused to believe had died, so they could begin the decades-long trip back home.</p>
+            <p>She started fighting in the Games in the hopes of earning the money and finding a pilot willing to take the epic trip back home to reunite with what remains of her family, but was shocked to find Jackson alive and living a new life. Now that Anita and Jackson are reunited in the Games, she plans to work through her relationship with her estranged brother and support her new chosen family–the Legends.</p>
+          </span><button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+        <div style="margin-top: 50px;">
+          <table>
+            <tr>
+              <td><strong>Real Name</strong></td>
+              <td> Anita Williams </td>
+            </tr>
+            <tr>
+              <td><strong>Age</strong></td>
+              <td> 40 </td>
+            </tr>
+            <tr>
+              <td><strong>Home Planet</strong></td>
+              <td> Gridiron </td>
+            </tr>
+            <tr>
+              <td><strong>Class</strong></td>
+              <td> Assault </td>
+            </tr>
+          </table>
+        </div>
+        <div class="abilities" style="margin-top: 50px;">
+          <table>
+            <tr>
+              <td><img src="image/apex-legends/abilities/bangalore-ability-p.png"></td>
+              <td>
+                <p><strong style="color: red">Passive ability</strong><br><strong>Double Time</strong><br> Taking fire while sprinting makes you move faster for a brief time.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="image/apex-legends/abilities/bangalore-ability-1.png"></td>
+              <td>
+                <p><strong style="color: red">Tactical ability</strong><br><strong>Smoke Launcher</strong><br> Fire a high-velocity smoke canister that explodes into a smoke wall on impact.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="image/apex-legends/abilities/bangalore-ability-2.png"></td>
+              <td>
+                <p><strong style="color: red">Ultimate ability</strong><br><strong>Rolling Thunder</strong><br> Call in an artillery strike that slowly creeps across the landscape.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 Lou Tim Hung</p>
+    </footer>
+  </body>
+</html>
